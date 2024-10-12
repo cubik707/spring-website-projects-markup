@@ -196,4 +196,27 @@ html, body{
 
     align-self: flex-start; /* Это предотвратит растягивание элемента на всю ширину */
     display: inline-block;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.description-wrapper a:hover{
+    color: #fff;
+}
+
+.description-wrapper a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0,17,17,17) 0%,rgba(0,17,17,1) 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0) 100%);
+    z-index: -1;
+    transition: left .3s;
+}
+
+.description-wrapper a:hover:before{
+    left: 0;
 }
