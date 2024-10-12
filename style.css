@@ -81,6 +81,7 @@ html, body{
     flex-direction: row;
     gap: 20px;
     justify-content: center;
+    align-items: stretch;
 }
 
 .navbar-menu{
@@ -88,6 +89,7 @@ html, body{
     flex-direction: row;
     gap: 20px;
     justify-content: center;
+    align-items: stretch;
 }
 
 .navbar-menu li {
@@ -95,17 +97,25 @@ html, body{
     font-size: .95rem;
 }
 
+.navbar-list-item{
+    position: relative;
+    display: flex;
+}
+
 .navbar-link{
     font-family: Metropolis, sans-serif;
     font-weight: bold;
-    position: relative;
-    padding: 8px 12px;
+    line-height: 1.5;
+    padding: .5rem .75rem;
+
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
 .navbar-link:after{
     content: " ";
     position: absolute;
-    top: 40%;
     left: 88%;
     display: block;
     transform: translateY(-50%) rotate(-45deg);
@@ -116,6 +126,59 @@ html, body{
     border-radius: 1px;
     height: .5rem;
     width: .5rem;
+}
+
+.navbar-dropdown{
+    position: absolute;
+    background: #ffffff;
+    border: 0;
+    box-shadow: 0 5px 30px 0 rgba(108, 135, 135, .5);
+    font-family: Open Sans, sans-serif;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 6px;
+    top: 100%; /* Помещает выпадающее меню сразу под ссылкой */
+    left: 0;
+    visibility: hidden; /* Изначально элемент невидим */
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 20;
+}
+
+.navbar-dropdown li{
+    white-space: nowrap;
+    padding: .375rem 1rem;
+}
+
+.navbar-dropdown a{
+    padding-right: 3rem;
+    color: #111;
+}
+
+.navbar-dropdown a:hover{
+    color: #6db33f;
+}
+
+.navbar-dropdown a.view-all-proj{
+    display: block;
+    color: #086dc3;
+    margin-bottom: 24px;
+}
+
+.dev-tools{
+    font-size: .8rem;
+}
+
+.navbar-dropdown svg{
+    margin-left: .5rem;
+    height: 1em;
+    vertical-align: -0.125em;
+}
+
+.navbar-list-item:hover .navbar-dropdown{
+    visibility: visible; /* Элемент становится видимым */
+    opacity: 1; /* Появляется плавно */
+    display: block;
 }
 
 .theme-toggler{
