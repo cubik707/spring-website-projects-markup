@@ -1,4 +1,4 @@
-/* ================ Сбросс стилей ================ */
+/* ================ reset styles ================ */
 
 * {
     padding: 0;
@@ -6,9 +6,7 @@
     box-sizing: border-box;
 }
 
-/* ================ Общие стили ================ */
-
-
+/* ================ common styles ================ */
 
 a{
     text-decoration: none;
@@ -47,7 +45,7 @@ html, body{
     margin: 0 auto;
 }
 
-/* ================ Стили для Хедера ================ */
+/* ================ header styles ================ */
 
 .header{
     padding: 5px 0;
@@ -142,9 +140,9 @@ html, body{
     font-size: 1rem;
     padding: 1rem;
     border-radius: 6px;
-    top: 100%; /* Помещает выпадающее меню сразу под ссылкой */
+    top: 100%; /* Places the dropdown menu directly below the link */
     left: 0;
-    visibility: hidden; /* Изначально элемент невидим */
+    visibility: hidden; /* Initially, the element is hidden */
     opacity: 0;
     transition: opacity 0.5s ease;
     z-index: 20;
@@ -181,8 +179,8 @@ html, body{
 }
 
 .navbar-list-item:hover .navbar-dropdown{
-    visibility: visible; /* Элемент становится видимым */
-    opacity: 1; /* Появляется плавно */
+    visibility: visible; /* The element becomes visible */
+    opacity: 1; /* Fades in smoothly */
     display: block;
 }
 
@@ -229,7 +227,7 @@ html, body{
 }
 
 
-/* ================ Стили для 1-й секции ================ */
+/* ================ 1st section styles ================ */
 
 .projects-section{
     margin: 3rem 0;
@@ -266,7 +264,7 @@ html, body{
     height: auto;
     padding: 15px 30px;
 
-    align-self: flex-start; /* Это предотвратит растягивание элемента на всю ширину */
+    align-self: flex-start; /* This prevents the element from stretching to full width */
     display: inline-block;
 
     position: relative;
@@ -293,7 +291,7 @@ html, body{
     left: 0;
 }
 
-/* ================ Стили для 2-й секции ================ */
+/* ================ 2nd section styles ================ */
 
 .projects-list-section{
     padding-bottom: 3rem;
@@ -341,10 +339,6 @@ html, body{
     transform: translateY(-3px);
 }
 
-.image{
-
-}
-
 .project-item img{
     flex: 1 1;
     min-width: 120px;
@@ -365,7 +359,7 @@ html, body{
 
 
 
-/* ================ Медиа запросы ================ */
+/* ================ Media queries ================ */
 
 @media screen and (max-width: 1344px) {
     .container {
