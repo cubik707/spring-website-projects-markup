@@ -373,7 +373,7 @@ html, body{
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
     .navbar-burger{
         display: block;
     }
@@ -386,7 +386,30 @@ html, body{
         padding: 0 32px;
     }
 
+    .project-item {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+
+    .project-info {
+        text-align: left;
+    }
+
+    .project-item img {
+        margin: 0 auto;
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
     .projects-list article {
         width: 100%;
+    }
+
+    .project-item img {
+        width: 150px;
+        height: 150px;
     }
 }
