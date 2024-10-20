@@ -232,7 +232,7 @@ body {
   display: none;
 }
 
-.hamburger{
+.hamburger {
   cursor: pointer;
   height: 48px;
   position: relative;
@@ -243,7 +243,7 @@ body {
   transform: none;
 }
 
-.hamburger > div:first-child{
+.hamburger > div:first-child {
   background: currentcolor;
   height: 2px;
   left: 12px;
@@ -254,7 +254,7 @@ body {
   transform: none;
 }
 
-.hamburger > div:nth-child(2){
+.hamburger > div:nth-child(2) {
   background: currentcolor;
   height: 2px;
   left: 12px;
@@ -265,7 +265,7 @@ body {
   transform: none;
 }
 
-.hamburger > div:nth-child(3){
+.hamburger > div:nth-child(3) {
   background: currentcolor;
   height: 2px;
   left: 12px;
