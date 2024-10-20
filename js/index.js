@@ -1,12 +1,12 @@
-import { projects } from './projects.js';
+import projects from './projects';
 
 const projectsList = document.querySelector('.projects-list');
 
 // Function for generating HTML
-function renderProjects(projects) {
-    projects.forEach((project) => {
-        const article = document.createElement('article');
-        article.innerHTML = `
+function renderProjects(projectsData) {
+  projectsData.forEach((project) => {
+    const article = document.createElement('article');
+    article.innerHTML = `
       <a href="${project.link}">
         <div class="project-item">
           <img src="${project.image}" alt="${project.title}" />
@@ -17,8 +17,8 @@ function renderProjects(projects) {
         </div>
       </a>
     `;
-        projectsList.append(article);
-    });
+    projectsList.append(article);
+  });
 }
 
 // Calling a function to render projects
