@@ -230,6 +230,11 @@ body {
 
 .navbar-burger {
   display: none;
+  height: 100%;
+}
+
+.navbar-burger:hover {
+  background-color: rgba(0, 0, 0, .05);
 }
 
 .hamburger {
@@ -415,13 +420,17 @@ body {
 /* ================ Media queries ================ */
 
 @media screen and (max-width: 1344px) {
+  .header{
+    padding: 0;
+  }
+
   .container {
-    padding: 0 32px;
+    padding: 0;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .navbar-burger {
+  .navbar-burger{
     display: block;
   }
 
