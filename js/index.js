@@ -17,7 +17,7 @@ function renderProjects(projects) {
         </div>
       </a>
     `;
-        projectsList.appendChild(article);
+        projectsList.append(article);
     });
 }
 
