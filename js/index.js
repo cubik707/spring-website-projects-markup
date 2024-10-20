@@ -1,4 +1,6 @@
-import projects from './projects';
+import projects from './projects.js';
+import renderNavbarMenu from './renderNavbarMenu.js';
+import navbarMenuItems from './navbarMenuItems.js';
 
 const projectsList = document.querySelector('.projects-list');
 
@@ -23,3 +25,4 @@ function renderProjects(projectsData) {
 
 // Calling a function to render projects
 renderProjects(projects);
+renderNavbarMenu(navbarMenuItems)
