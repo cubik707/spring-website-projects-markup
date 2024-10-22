@@ -229,7 +229,7 @@ body {
 }
 
 .navbar-burger:hover {
-  background-color: rgba(0, 0, 0, .05);
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .hamburger {
@@ -415,7 +415,7 @@ body {
 /* ================ Media queries ================ */
 
 @media screen and (max-width: 1344px) {
-  .header{
+  .header {
     padding: 0;
   }
 
@@ -425,16 +425,16 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
-  .navbar-burger{
+  .navbar-burger {
     display: block;
     z-index: 999;
   }
 
-  .navbar-burger:hover{
-    background-color: rgba(1, 1, 1, .05);
+  .navbar-burger:hover {
+    background-color: rgba(1, 1, 1, 0.05);
   }
 
-  .hamburger.open{
+  .hamburger.open {
     top: 0;
     right: 0;
     position: fixed;
@@ -458,10 +458,12 @@ body {
     background: white;
   }
 
-  .navbar-menu-wrapper{
+  .navbar-menu-wrapper {
     position: absolute;
     transform: translateY(-100%);
-    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+    transition:
+      transform 0.5s ease-out,
+      opacity 0.5s ease-out;
     opacity: 0;
     visibility: hidden;
   }
@@ -498,19 +500,19 @@ body {
     color: #fff;
     cursor: pointer;
     position: relative;
-    border-bottom: 1px solid hsla(0, 0%, 100%, .4);
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.4);
     display: block;
     height: 60px;
     margin: 1rem 0;
     font-size: 2rem;
 
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: normal;
     line-height: normal;
     padding: 0;
   }
 
-  .open .navbar-link:hover{
+  .open .navbar-link:hover {
     color: #6cb52d;
   }
 
@@ -518,13 +520,13 @@ body {
     border: solid #98afae;
     border-width: 0 2px 2px 0;
     transform: rotate(45deg) translate(-5px, 5px) scale(1);
-    content: " ";
+    content: ' ';
     display: block;
     height: 15px;
     position: absolute;
     right: 5px;
     top: 20px;
-    transition: transform .2s ease-out;
+    transition: transform 0.2s ease-out;
     width: 15px;
     left: unset;
   }
@@ -533,7 +535,7 @@ body {
     transform: rotate(45deg) translate(5px, 15px) scale(-1);
   }
 
-  .navbar-dropdown.active{
+  .navbar-dropdown.active {
     visibility: visible;
     opacity: 1;
     position: static;
@@ -543,18 +545,18 @@ body {
     padding: 0;
   }
 
-  .navbar-dropdown li{
+  .navbar-dropdown li {
     padding: 0;
   }
 
-  .navbar-dropdown.active a{
+  .navbar-dropdown.active a {
     color: #98afae;
     font-size: 1.2rem;
-    padding: .2rem 0;
+    padding: 0.2rem 0;
     display: block;
   }
 
-  .navbar-dropdown.active a:hover{
+  .navbar-dropdown.active a:hover {
     color: #6cb52d;
   }
 
