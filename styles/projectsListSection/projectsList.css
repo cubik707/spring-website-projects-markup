@@ -11,6 +11,10 @@
     padding: 12px;
 }
 
+.projects-list article:only-child {
+    width: 100%;
+}
+
 .project-item {
     align-items: center;
     display: flex;
