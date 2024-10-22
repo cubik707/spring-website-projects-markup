@@ -8,10 +8,18 @@ function renderNavbarMenu(navbarMenuItems) {
     const title = document.createElement('span');
     title.classList.add('navbar-link');
     title.textContent = item.title;
-    listItem.append(title);
 
     const dropdown = document.createElement('ul');
     dropdown.classList.add('navbar-dropdown');
+
+    title.addEventListener('click', () => {
+      dropdown.classList.toggle('active');
+      title.classList.toggle('arrow-up');
+
+      // Update overflow-y for burger menu
+      const navbarMenuWrapper = document.querySelector('.navbar-menu-wrapper.open');
+      navbarMenuWrapper.style.overflowY = dropdown.classList.contains('active') ? 'auto' : '';
+    });
 
     item.dropdown.forEach((dropdownItem) => {
       const dropdownListItem = document.createElement('li');
@@ -37,7 +45,7 @@ function renderNavbarMenu(navbarMenuItems) {
       dropdown.append(dropdownListItem);
     });
 
-    listItem.append(dropdown);
+    listItem.append(title, dropdown);
     navbarMenu.append(listItem);
   });
 }
