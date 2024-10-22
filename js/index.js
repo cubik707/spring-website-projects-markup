@@ -4,7 +4,7 @@ import navbarMenuItems from './data/navbarMenuItems.js';
 import renderProjects from './components/renderProjects.js';
 import handleBurgerMenuClick from './handlers/burgerMenu.js';
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
   renderProjects(projects);
   renderNavbarMenu(navbarMenuItems);
   handleBurgerMenuClick();

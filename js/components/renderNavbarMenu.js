@@ -17,8 +17,12 @@ function renderNavbarMenu(navbarMenuItems) {
       title.classList.toggle('arrow-up');
 
       // Update overflow-y for burger menu
-      const navbarMenuWrapper = document.querySelector('.navbar-menu-wrapper.open');
-      navbarMenuWrapper.style.overflowY = dropdown.classList.contains('active') ? 'auto' : '';
+      const navbarMenuWrapper = document.querySelector(
+        '.navbar-menu-wrapper.open',
+      );
+      navbarMenuWrapper.style.overflowY = dropdown.classList.contains('active')
+        ? 'auto'
+        : '';
     });
 
     item.dropdown.forEach((dropdownItem) => {
