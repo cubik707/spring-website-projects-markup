@@ -1,8 +1,8 @@
-import projects from './projects.js';
-import renderNavbarMenu from './renderNavbarMenu.js';
-import navbarMenuItems from './navbarMenuItems.js';
-import renderProjects from './renderProjects.js';
-import handleBurgerMenuClick from './burgerMenu.js';
+import projects from './data/projects.js';
+import renderNavbarMenu from './components/renderNavbarMenu.js';
+import navbarMenuItems from './data/navbarMenuItems.js';
+import renderProjects from './components/renderProjects.js';
+import handleBurgerMenuClick from './handlers/burgerMenu.js';
 
 document.addEventListener('DOMContentLoaded', function () {
   renderProjects(projects);
