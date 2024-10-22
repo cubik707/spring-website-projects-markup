@@ -11,9 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
   renderNavbarMenu(navbarMenuItems);
   handleBurgerMenuClick();
 
-  const searchInput = document.getElementById('search-input-projects');
+  const searchInput = document.getElementById('searchInput-input-projects');
   document
-    .getElementById('clear-search')
+    .getElementById('clear-searchInput')
     .addEventListener('click', () => clearSearch(searchInput));
   setupSearch(searchInput);
 });

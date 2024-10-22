@@ -21,7 +21,7 @@ function filterProjects(query) {
   }
 }
 
-// Setup search functionality for the input element
+// Setup searchInput functionality for the input element
 export default function setupSearch(inputElement) {
   let timeout;
   inputElement.addEventListener('input', () => {
