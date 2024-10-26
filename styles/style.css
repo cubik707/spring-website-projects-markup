@@ -1,0 +1,5 @@
+@import url('common.css');
+@import url('./header/header.css');
+@import url(./projectsSection/projectsSection.css);
+@import url(./projectsListSection/projectsListSection.css);
+@import url('responsive/responsive.css');
